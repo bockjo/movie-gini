@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <title>Movie Gini</title>
+</head>
+<body id="home">
+  <a href="https://johannes-udacity.us.auth0.com/authorize?audience=gini&response_type=token&client_id=K1cunY0C7g6Ew9V4T7iCLLlJxOXM9RPZ&redirect_uri=http://127.0.0.1:5000/login-results">Login</a>
+  <a href="https://johannes-udacity.us.auth0.com/v2/logout?client_id=K1cunY0C7g6Ew9V4T7iCLLlJxOXM9RPZ&returnTo=http://127.0.0.1:5000/logout">Logout</a>
+  
+  
+  {% if result %}
+    <a href="/">Re-start quiz</a>
+    <h1>You are thinking of {{ result }}!</h1>
+  {% else %}
+    <h1>{{ question_text }}</h1>
+    <form>
+      <input type="hidden" name="question" value="{{ question }}" />
+      <input type="hidden" name="session" value="{{ session }}" />
+      <input type="hidden" name="prob" value="{{ prob }}" />
+      <label><input type="radio" name="answer" value="1" required /> Yes</label><br />
+      <label><input type="radio" name="answer" value="0" required /> No</label><br />
+      <label><input type="radio" name="answer" value="0.5" required /> Don't know</label><br />
+      <label><input type="radio" name="answer" value="0.75" required /> Probably yes</label><br />
+      <label><input type="radio" name="answer" value="0.25" required /> Probably Not</label><br />
+      <br />
+      <input type="submit" value="Next" />
+    </form>
+  {% endif %}
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿question;Type;category_id
+Is the movie about a couple who fall in love on a cruise ship?;Specific;1
+Is an alien the main character in the movie?;Specific;1
+Does the movie play in far away galaxies?;Specific;1
+Is a powerful ring at the center of the plot?;Specific;1
+Is the movie about a robot that has super-human powers and wants to extinct the human race?;Specific;1
+Is the movie about a lion?;Specific;1
+Is the movie about dinosaurs?;Specific;1
+Is the movie about a young wizard?;Specific;1
+Does the movie play during the second World War?;Specific;1
+Is the movie about a superhero looking like a bat?;Specific;1
+Is the movie about pirates?;Specific;1
+Is the movie about robots that can transform into cars?;Specific;1
+Is the movie about a soldier that should be rescued from the battlefield?;Specific;1
+Is the movie about hackers that try to fight a computer programme?;Specific;1
+Is the movie about roman slaves?;Specific;1
+Is the movie about a set of heroes that try to rescue the world from bad criminals with superpowers?;Specific;1
+Does the movie play in a Nazi concentration camp?;Specific;1
+Is the main figure in the movie a male person?;Generic;1
+Does the movie contain fantasy or fiction?;Generic;1
+Was the movie released before the year 2000?;Generic;1
+Does the movie contain a lot of action?;Generic;1
+Is the movie based on a book?;Generic;1
+Is the main figure in the movie above 30 years old?;Generic;1
+Is there a psychopath in the movie?;Generic;1
+Can you see a lot of swords in the movie?;Generic;1
+Can you see a lot of blood in the movie?;Generic;1
+Are there a lot of scenic landscapes in the movie?;Generic;1
+Does the movie play on planet earth?;Generic;1
+Is there more than one main character in the movie?;Generic;1
