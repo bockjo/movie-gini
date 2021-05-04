@@ -56,7 +56,7 @@ Before running the application locally, adjust `config.py` file in root director
 - Replace the following import statements
   ```
     database = {
-    "path": os.environ["GINI_DATABASE_URI"]
+    "path": os.environ["DATABASE_URL"]
             }
   ```
   with

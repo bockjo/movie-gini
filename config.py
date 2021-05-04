@@ -1,7 +1,7 @@
 import os
 
 database = {
-    "path": os.environ["GINI_DATABASE_URI"] #"postgresql://postgres:johannes@localhost:5432/ginitest" #os.environ["GINI_DATABASE_URI"]
+    "path": os.environ["DATABASE_URL"] #"postgresql://postgres:johannes@localhost:5432/ginitest" #os.environ["GINI_DATABASE_URI"]
 }
 
 auth0_config = {
