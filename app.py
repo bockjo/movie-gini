@@ -94,6 +94,8 @@ def create_app(test_config=None):
     def play():
         category_id = 1
         cat = Category.query.get(category_id)
+        if cat == None:
+            abort(404)
         # Get frontend data
         question_id = request.args.get('question',None)
         answer = request.args.get('answer',None)
@@ -152,7 +154,7 @@ def create_app(test_config=None):
         
 
         # Stop if there is no more questions to ask or threshold has been reached
-        if len(session_finder.available_questions)==0 or result["best_item_prob"]>0.3:
+        if len(session_finder.available_questions)==0 or result["best_item_prob"]>0.28:
             best_idx = result['best_item_id']
             m = Movie.query.get(int(best_idx))
             return render_template('index.html', result=m.title,session=session_id)
